@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Website Evaluation Table</h2>
+
+<table>
+  <tr>
+    <th>Sr. No.</th>
+    <th>Website URL</th>
+    <th>Purpose of website</th>
+    <th>Things I liked about the website</th>
+    <th>Thing I dislike about the website</th>
+    <th>Overall evaluation</th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>Amazon (amazon.com)</td>
+    <td>E-commerce Website</td>
+    <td><ul>
+      <li>Fast search and filtering.</li>
+      <li>Personalized suggestions.</li>
+      <li>Easy checkout process.</li>
+    </ul></td>
+    <td><ul>
+      <li>Homepage is cluttered/busy.</li>
+      <li>Too many ads and banners.</li>
+      <li>Navigation menus are huge.</li>
+    </ul></td>
+    <td>Good</td>
+  </tr>
+  
+  <tr>
+    <td>2</td>
+    <td>Craigslist (craigslist.org)</td>
+    <td>Classified Ads</td>
+    <td>
+      <ul>
+        <li>Very fast loading speed.</li>
+        <li>Simple, direct text.</li>
+        <li>No distractions.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Outdated visual design (90s style).</li>
+        <li>Hard to use on mobile phones.</li>
+        <li>No images on the main list view.</li>
+      </ul>
+    </td>
+    <td>Bad (Visually)</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>Apple (apple.com)</td>
+    <td>Corporate / Product Showcase</td>
+    <td>
+      <ul>
+        <li>High-quality images & video.</li>
+        <li>Clean, modern typography.</li>
+        <li>Smooth interactive animations.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Navigation is often hidden.</li>
+        <li>Some pages load slowly.</li>
+        <li>Form over function in some areas.</li>
+      </ul>
+    </td>
+    <td>Good</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>Wikipedia (wikipedia.org)</td>
+    <td>Online Encyclopedia</td>
+    <td>
+      <ul>
+        <li>Highly readable text.</li>
+        <li>Consistent layout on every page.</li>
+        <li>No intrusive ads.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Visually boring/plain.</li>
+        <li>Dense walls of text can be tiring.</li>
+        <li>Editing interface is complex.</li>
+      </ul>
+    </td>
+    <td>Good</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td>Arngren (arngren.net)</td>
+    <td>Gadget Sales</td>
+    <td>
+      <ul>
+        <li>(None – cautionary example).</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>No grid structure (chaos).</li>
+        <li>Overlapping text and images.</li>
+        <li>Clashing colors make it unreadable.</li>
+      </ul>
+    </td>
+    <td>Bad</td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td>LinkedIn (linkedin.com)</td>
+    <td>Professional Networking</td>
+    <td>
+      <ul>
+        <li>Clean, professional color scheme.</li>
+        <li>Easy to update profile info.</li>
+        <li>Good use of icons.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Feed algorithm can be repetitive.</li>
+        <li>Too many notifications/pop-ups.</li>
+        <li>Chat window is intrusive.</li>
+      </ul>
+    </td>
+    <td>Good</td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td>CNN (cnn.com)</td>
+    <td>News & Media</td>
+    <td>
+      <ul>
+        <li>Headlines are bold and clear.</li>
+        <li>Breaking news is easy to spot.</li>
+        <li>Good use of video content.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Auto-play videos are annoying.</li>
+        <li>Page is often crowded with ads.</li>
+        <li>Slow load times.</li>
+      </ul>
+    </td>
+    <td>Average</td>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td>Yale School of Art (art.yale.edu)</td>
+    <td>Academic / Art School</td>
+    <td>
+      <ul>
+        <li>Unique, artistic expression.</li>
+        <li>Community-editable wiki style.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Extremely confusing navigation.</li>
+        <li>Backgrounds make text hard to read.</li>
+        <li>Looks broken/unprofessional.</li>
+      </ul>
+    </td>
+    <td>Bad</td>
+  </tr>
+
+  <tr>
+    <td>9</td>
+    <td>Dropbox (dropbox.com)</td>
+    <td>Cloud Storage Service</td>
+    <td>
+      <ul>
+        <li>Lots of white space (clean).</li>
+        <li>Clear "Call to Action" buttons.</li>
+        <li>Simple illustrations.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Hard to find technical details.</li>
+        <li>Homepage hides features.</li>
+      </ul>
+    </td>
+    <td>Good</td>
+  </tr>
+
+  <tr>
+    <td>10</td>
+    <td>IMDb (imdb.com)</td>
+    <td>Movie Database</td>
+    <td>
+      <ul>
+        <li>Massive amount of detailed info.</li>
+        <li>Dark mode availability.</li>
+        <li>Reliable search bar.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Layout feels cluttered with trailers.</li>
+        <li>Too many auto-playing video ads.</li>
+      </ul>
+    </td>
+    <td>Good</td>
+  </tr>
+</table>
+
+</body>
+</html>
