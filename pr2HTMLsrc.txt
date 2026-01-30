@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasty Bites Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="tasty-header">
+    <h1 class="restaurant-name">Tasty Bites Restaurant</h1>
+    <p class="slogan">Fresh Food • Great Taste</p>
+    </header>
+
+
+    <marquee><p style="color: red; font-size: 18px;">
+        🎉 Special Offer: Flat 20% OFF this weekend!
+    </p></marquee>
+
+    <p>
+        Welcome to <b>Tasty Bites</b>. We serve delicious and hygienic food.
+    </p>
+    <marquee>
+    <img src="food1.png" alt="Restaurant Food" width="500" height="300">
+    <img src="food2.png" alt="Restaurant Food" width="500" height="300">
+    <img src="food3.png" alt="Restaurant Food" width="500" height="300">
+    <img src="food5.png" alt="Restaurant Food" width="500" height="300">
+    <img src="food6.png" alt="Restaurant Food" width="500" height="300">
+    <img src="food7.png" alt="Restaurant Food" width="500" height="300">
+    </marquee>
+    <br><br>
+
+    <h3>Our Menu</h3>
+    <ul>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Pasta</li>
+    </ul>
+
+    <ol>
+        <li>Order Food</li>
+        <li>Enjoy Meal</li>
+        <li>Visit Again</li>
+    </ol>
+
+    <h3>Price List</h3>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Pizza</td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>Burger</td>
+            <td>$7</td>
+        </tr>
+    </table>
+
+    <h3>Our Location</h3>
+        <a href="https://www.google.com/travel/search?q=hotel%20taj&g2lb=4965990%2C72471280%2C72560029%2C72573224%2C72647020%2C72686036%2C72796179%2C72803964%2C72882230%2C72887409%2C72958624%2C73059275%2C73064764%2C73249150&hl=en-IN&gl=in&cs=1&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjqDxABGB4SBwjqDxABGB8YATICEAAqDAoKOgNJTlJCAwjLAQ&qs=CAEyFENnc0kxXzdjcHRxUXdaVEFBUkFCOAtCCRF_YLXfGk5RU0IJEZ1H-D7XFyO9Wl8yXaoBWgoNL2cvMTFjM3d2MmxqagoJL20vMGNkbWszEAEqDSIJaG90ZWwgdGFqKAAyHhABIhqa81iIekuhTdFimJVtgud466ScATgPbtma_DINEAIiCWhvdGVsIHRhag&ap=aAG6AQhvdmVydmlldw&ictx=111&ved=0CAAQ5JsGahcKEwjQtp-A9LKSAxUAAAAAHQAAAAAQBQ">
+        <img src="hotel.png" alt="Restaurant Food" width="400" height="300" alt="Location">
+        </a>
+
+    <h3>Contact Us</h3>
+    <form>
+        Name:<br>
+        <input type="text"><br><br>
+
+        Email:<br>
+        <input type="email"><br><br>
+
+        Message:<br>
+        <textarea rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Send">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+body {
+    background-color: #101720;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+    color: white;;
+}
+
+.tasty-header {
+    background-color: #1d2229;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.restaurant-name {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+.slogan {
+    color: #c9d1d9;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+}
+
+img {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
