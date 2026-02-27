@@ -1,76 +1,63 @@
-let firstValue = "";
-let operator = "";
-let secondValue = "";
+let expression = "";
 
+// Append numbers and operators without clearing display
 function appendValue(value) {
-    document.getElementById("display").value += value;
+    // Prevent two operators in a row
+    if (/[+\-*/]$/.test(expression) && /[+\-*/]/.test(value)) {
+        alert("Two operators cannot be entered consecutively!");
+        return;
+    }
+
+    expression += value;
+    document.getElementById("display").value = expression;
 }
 
-function setOperator(op) {
-    let display = document.getElementById("display").value;
-
-    if (display === "") {
-        alert("Please enter a number first!");
-        return;
-    }
-
-    if (isNaN(display)) {
-        alert("Invalid input! Only numbers allowed.");
-        clearDisplay();
-        return;
-    }
-
-    firstValue = display;
-    operator = op;
+// Clear display
+function clearDisplay() {
+    expression = "";
     document.getElementById("display").value = "";
 }
 
+// Calculate result
 function calculate() {
-    secondValue = document.getElementById("display").value;
-
-    if (secondValue === "") {
-        alert("Please enter second value!");
+    if (expression === "") {
+        alert("Please enter a mathematical expression!");
         return;
     }
 
-    if (isNaN(secondValue)) {
-        alert("Invalid input! Only numeric values allowed.");
+    // Validation: allow only numbers and operators
+    if (/[^0-9+\-*/.]/.test(expression)) {
+        alert("Invalid input! Only numbers and operators are allowed.");
         clearDisplay();
         return;
     }
 
-    let result;
+    try {
+        let result = eval(expression);
 
-    if (operator === "+") {
-        result = Number(firstValue) + Number(secondValue);
-    } else if (operator === "-") {
-        result = Number(firstValue) - Number(secondValue);
-    } else if (operator === "*") {
-        result = Number(firstValue) * Number(secondValue);
-    } else if (operator === "/") {
-        if (Number(secondValue) === 0) {
-            alert("Cannot divide by zero!");
+        // Handle divide by zero or invalid math
+        if (!isFinite(result)) {
+            alert("Math Error! Cannot divide by zero.");
             clearDisplay();
             return;
         }
-        result = Number(firstValue) / Number(secondValue);
+
+        // Show result and keep it for further calculation
+        document.getElementById("display").value = result;
+        expression = result.toString();
+
+    } catch (error) {
+        alert("Invalid Expression!");
+        clearDisplay();
     }
-
-    document.getElementById("display").value = result;
 }
 
-function clearDisplay() {
-    document.getElementById("display").value = "";
-    firstValue = "";
-    secondValue = "";
-    operator = "";
-}
-
+// Square using prompt (as required in assignment)
 function squareNumber() {
     let num = prompt("Enter a number to find its square:");
 
-    if (num === null || num === "") {
-        alert("No input provided!");
+    if (num === null || num.trim() === "") {
+        alert("Input cannot be empty!");
         return;
     }
 
@@ -79,7 +66,11 @@ function squareNumber() {
         return;
     }
 
-    let square = num * num;
+    let square = Number(num) * Number(num);
+
     alert("Square of " + num + " is: " + square);
-    document.getElementById("display").value = square;
+
+    // Display square result and keep equation
+    expression = square.toString();
+    document.getElementById("display").value = expression;
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="employees.xsl"?>
+<!DOCTYPE employees SYSTEM "employees.dtd">
+
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="employees.xsd">
+
+    <employee>
+        <emp_id>E101</emp_id>
+        <name>Rahul Sharma</name>
+        <department>IT</department>
+        <salary>50000</salary>
+        <email>rahul@gmail.com</email>
+        <phone>9876543210</phone>
+    </employee>
+
+    <employee>
+        <emp_id>E102</emp_id>
+        <name>Priya Patel</name>
+        <department>HR</department>
+        <salary>45000</salary>
+        <email>priya@gmail.com</email>
+        <phone>9123456780</phone>
+    </employee>
+
+</employees>
